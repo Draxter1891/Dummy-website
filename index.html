@@ -214,13 +214,115 @@
             
             
         }
+
+
+        /* mouse work */
+        .cursor{
+            cursor: pointer;
+        
+        }
+        #cursor{
+            cursor: pointer;
+        }
+        #cursor:hover{
+            background-color: rgb(46, 46, 108);
+            color: white;
+        }
+        #bgclr{
+            cursor: pointer;
+        }
+        #bgclr:hover{
+            background-color: rgb(46,46,108) ;
+            color: white;
+        }
+
+        /* navigaton bar */
+
+      .navbar {
+      border:groove rgb(171,130,229);
+      border-width: 1rem;
+      border-radius: 2rem;
+      height: 2rem;
+      padding: 0.02rem 0.1rem 0.7rem;
+      background-color: rgb(185, 225, 213);
+
+    }
+
+    .ul {
+      overflow: auto;
+    }
+
+    .ul li {
+      float: left;
+      list-style: none;
+      border-radius: 2rem;
+      padding: 0.2rem;
+      margin: 0rem 0.5rem 0.1rem 2rem;
+      width: 70px;
+      cursor: pointer;
+      color: white;
+    }
+    .li  {
+      background-color: rgb(118, 118, 199);
+      
+    }
+    .li:hover{
+      background-color: rgb(54, 64, 125);
+    }
+    .navbar ul a {
+      text-decoration: none;
+      color: white;
+
+
+    }
+
+    .navbar input {
+      float: right;
+      margin: 0.1rem 0.5rem 0.8rem;
+      border-radius: 0.4rem;
+      border: 0.2rem solid rgb(171,130,229) ;
+      font-weight: bold;
+      color: rgb(54,54,125);
+
+
+    }
+
+    #img {
+      margin-right: 30px;
+      margin-bottom: 12px;
+      float: right;
+      border-radius: 20px;
+      cursor: pointer;
+      
+    }
         
     </style>
 </head>
 
 <body>
-    <center>
 
+    <!-- navigation bar -->
+    <header>
+        <div class="navbar">
+          <ul class="ul" id="ul">
+            <li class="li"><a class="Home" href="#" target=""></a>&nbsp; Home</li>
+            <li class="li"><a class="services" href="#" target=""></a>services</li>
+            <li class="li"><a class="about" href="about.html" target="_main">&nbsp;&nbsp;&nbsp;about</a></li>
+            <li class="li"><a class="contact" href="#" target=""></a>&nbsp;contact&nbsp;</li>
+            <div id="img">
+             <a href="" target=""> <img
+                src="https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/64/000000/external-search-interface-kiranshastry-lineal-color-kiranshastry.png"
+                alt="search" width="30px"></a>
+            </div>
+            <div class="search">
+              <input type="text" id="search" name="search" placeholder="&nbsp&nbsp search this website">
+            </div>
+          </ul>
+        </div>
+      </header>
+    
+    <center>
+         <br><br><br><br><br>
         <section><center>
             <div id="Heading">CSS POSITIONING</div>
         </center>
@@ -423,30 +525,30 @@
                             </tr><br><br>
         
                             <tr style="color: aliceblue;">
-                                <td>Select your subjets:</td>
+                                <td>Select your subjects:</td>
                                 <td><label for="M">
-                                        <input type="checkbox" name="maths" id="M">maths
+                                        <input type="checkbox" name="maths" id="M" class="cursor">maths
                                     </label>
                                     <label for="E">
-                                        <input type="checkbox" name="English" id="E">English
+                                        <input type="checkbox" name="English" id="E"class="cursor">English
                                     </label>
                                     <label for="Bio">
-                                        <input type="checkbox" name="Biology" id="Bio">Biology
+                                        <input type="checkbox"class="cursor" name="Biology" id="Bio">Biology
                                     </label>
                                     <label for="com">
-                                        <input type="checkbox" name="commerce" id="com">commerce
+                                        <input class="cursor"type="checkbox" name="commerce" id="com">commerce
                                     </label>
                                     <label for="bus">
-                                        <input type="checkbox" name="BussinesStudies" id="bus">BussinesStudies
+                                        <input class="cursor"type="checkbox" name="BussinesStudies" id="bus">BussinesStudies
                                     </label>
                                     <label for="chem">
-                                        <input type="checkbox" name="Chemistry" id="chem">Chemistry
+                                        <input class="cursor"type="checkbox" name="Chemistry" id="chem">Chemistry
                                     </label>
                                     <label for="phy">
-                                        <input type="checkbox" name="Physics" id="phy">Physics
+                                        <input class="cursor"type="checkbox" name="Physics" id="phy">Physics
                                     </label>
                                     <label for="cs">
-                                        <input type="checkbox" name="Computer Science" id="cs">Computer Science
+                                        <input class="cursor"type="checkbox" name="Computer Science" id="cs">Computer Science
                                     </label>
                                 </td>
                             </tr><br><br>
@@ -455,36 +557,36 @@
                                     
                                         <label for="g">Gender:</td>
                                             <td><label for="gender1">
-                                           <input type="radio" name="radio" value="male" id="gender1">male</label>
+                                           <input class="cursor"type="radio" name="radio" value="male" id="gender1">male</label>
                                             
                                         <label for="gender2">
-                                            <input type="radio" name="radio" value="female" id="gender2">female
+                                            <input class="cursor"type="radio" name="radio" value="female" id="gender2">female
                                         </label>
-                                        <input type="radio" name="radio" value="male" id="gender1">others</label>
+                                        <input class="cursor"type="radio" name="radio" value="male" id="gender1">others</label>
                                 </td>
                             </tr>
                             <tr style="color: aliceblue;">
                                 <td>
                                     Select your branch:</td><td>
-                                    <select class="block"name="select">
-                                        <option class="block"value="Cse">&nbsp;CSE</option>
-                                        <option class="block"value="it">&nbsp;IT</option>
-                                        <option class="block"value="ai">&nbsp;AI</option>
-                                        <option class="block"value="ai+ml">&nbsp;AI + ML</option>
+                                    <select class="block"name="select" id="bgclr">
+                                        <option class="cursor"class="block"value="Cse">&nbsp;CSE</option>
+                                        <option class="cursor" class="block"value="it">&nbsp;IT</option>
+                                        <option class="cursor"class="block"value="ai">&nbsp;AI</option>
+                                        <option class="cursor"class="block"value="ai+ml">&nbsp;AI + ML</option>
                                     </select><br><br>
                                 </td>
                             </tr>
                             <tr>
-                                <td>
-                                    <input class="block"type="submit" name="submit" value="submit">
+                                <td >
+                                    <input id="cursor"class="block"type="submit" name="submit" value="submit">
                                 </td>
         
         
-                                <td>
-                                    <input class ="block"type="reset" name="rstbtn" value="reset">
+                                <td >
+                                    <input id="cursor" class ="block"type="reset" name="rstbtn" value="reset">
                                 </td>
-                                <td>
-                                    <input class="block" type="button" name="btn" value="next">
+                                <td >
+                                    <input id="cursor" class="block" type="button" name="btn" value="next">
                                 </td>
                             </tr>
                 </form>
