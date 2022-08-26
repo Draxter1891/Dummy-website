@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="icon" href="https://png1.12png.com/t/13/17/17/b1J0eK5x2k/logo-iphone-icon-turquoise-cell-technology.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css position</title>
+    
+    <style>
+        body {
+            background-image:url(img/gradient_3.jpg); background-size:100%100%;
+            /* background-color:rgb(223, 198, 245) ; */
+            color: rgb(255, 255, 255);
+            font-size:1.2rem;
+            font-family: 'Baloo Bhai 2', cursive;
+            /* text-align: center; */
+            /* justify-items: center; */
+        }
+
+        div.static {
+            position: static;
+            border: solid 10px rgb(217, 214, 245);
+            border-radius: 1.5rem;
+            width: 20rem;
+            height: 12em;
+            text-align:center;
+        }
+        
+        /* website */
+        /* div.fixed1 {
+            position: fixed;
+            bottom: 35px;
+            font-size: 25px;
+            text-align: center;
+            right: 15px;
+            width: 40px;
+            height: 40px;
+        } */
+        
+        /*contact  */
+        div.fixed2 {/*wikipedia*/
+            position: fixed;
+            right: 1rem;
+            width: 2.4rem;
+            bottom: 5.02rem;
+            height: 4.5rem;
+        }
+        div.fixed4 {/*wikipedia*/
+            position: fixed;
+            right: 1rem;
+            width: 2.4rem;
+            bottom: 8.4rem;
+            height: 4.5rem;
+        }
+        
+        div.fixed1 {/*instagram*/
+            position: fixed;
+            right: 1rem;
+            width: 2.4rem;
+            bottom: 2.2rem;
+            height: 4.5rem;
+        }
+        
+        div.fixed3 {/* mail */
+            position: fixed;
+            bottom: 0.9rem;
+            right: 0.95rem;
+            width: 2.5rem;
+            height: 2rem;
+        }
+        /* div.fixed4 {
+            position: fixed;
+
+            bottom: 4rem;
+            font-size: 25px;
+            text-align: center;
+            right: 1.0rem;
+            width: 2.5rem;
+            height: 3.9rem;
+        } */
+
+        
+        #relative {/*para example*/
+            position: relative;
+            border: 0.5rem dotted rgb(12, 84, 55);
+            /* left: 0px; */
+            border-radius: 1.5rem 0.0rem;
+            right: 0.2rem;
+            top: 2rem;
+            /* bottom: 153px; */
+            background-color: rgb(79, 92, 154);
+            width: 15rem;
+            height: 12.5rem;
+            text-align:center;
+
+            /* text-indent:2rem ; */
+            /* text-shadow:#152028; */
+            color:rgb(238, 238, 238)
+        }
+
+        div.rel {/*box*/
+            position: relative;
+            width: 17rem;
+            height: 12rem;
+            border: 10px dashed rgb(187, 187, 248);
+            border-radius:2rem;
+            color: rgb(255, 255, 255);
+            left: -1rem;
+        }
+
+        div.absolute {
+            position: absolute;
+            top: 5rem;
+            left: 1rem;
+            width: 12rem;
+            height: 10rem;
+            border: 0.5rem outset #83aac7;
+            border-radius: 1.9rem;
+        }
+
+        /* div.stiky {                         /*done below in #Heading*/
+        /* position: sticky;
+            border: thick double #32a1ce;
+            border-radius: 15px;
+            background-color: rgb(203, 206, 216);
+            color: rgb(23, 159, 93);
+            top: 10px;
+            /* left: 50%; */
+        /* width: 300px; */
+        /* height: 40px; */
+        /* text-align: center; */
+        /* font-size: 27px; */
+        /* justify-content: center; */
+        /* margin: 4rem 13rem; */
+        /* } */
+        #image {
+            border: 10px ridge rgb(136, 200, 240);
+            border-radius: 2em;
+            margin: 4rem 10rem;
+            padding: auto;
+            /* align-items: center; */
+            justify-content: center;
+        }
+
+        #Heading {
+            position: relative;
+            border: 0.8rem outset rgb(171, 130, 229);
+            border-radius: 1.7rem;
+            background-color: rgb(255, 255, 255);
+            color: rgb(49, 68, 159);
+            padding: 0.1rem 0.2rem 0.7rem;
+            /* position: fixed; */
+            /* top: 0px; */
+            /* left: 50%; */
+            width: 20rem;
+            height: 2.5rem;
+            font-size: 2.1rem;
+            font-weight: bold;
+            font-family: 'Baloo Bhai 2', cursive;
+            
+        }
+        /* .sticky{
+            position: sticky;
+            top: 5.5rem;
+            margin-right: 16rem;
+            border: 0.5rem outset rgb(147, 154, 229);
+            border-radius: 1.7rem;
+            background-color: rgb(140, 204, 211);
+            color: rgb(255, 255, 255);
+            width:6rem;
+            display: block;
+            
+        } */
+
+        #items{
+            list-style-type: none;
+            /* background-color: rgb(126, 82, 227); */
+            /* border-radius: 10px; */
+            width: 30rem;
+            
+            
+        }
+        .listitems{
+            border: 10px solid rgb(69, 139, 201);
+            border-radius: 2rem;
+            font-weight: bold;
+            font-size: 2rem;
+            margin: 1.5rem;
+            /* border-spacing: ; */
+            /* background-color: rgb(194, 221, 245); */
+            list-style-type: circle;
+            text-align: center;
+    
+        }
+        .heading{
+          font-size:3rem;
+        }
+        /*form filling*/
+        table.tableborder {
+              /* font-size: x-small;  */
+              border-radius: 1.5rem; 
+              }
+    
+        .block{
+            border-width: 0.3rem;
+            border-color: blueviolet;
+            border-radius: 1rem 0rem;
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            
+            
+        }
+        
+    </style>
+</head>
+
+<body>
+    <center>
+
+        <section><center>
+            <div id="Heading">CSS POSITIONING</div>
+        </center>
+            <br><br><br><br>
+            <!-- <div class="sticky">Hello, I am Sticky :)</div> -->
+
+            <span class="types">
+                <p id="para1">
+                    There are five types of positioning Tags in CSS:
+                </p>
+                <ul id="items">
+                    <li class="listitems">Sticky</li>
+                    <li class="listitems">Fixed</li>
+                    <li class="listitems">Static</li>
+                    <li class="listitems">Relative</li>
+                    <li class="listitems">Absolute</li>
+                </ul>
+            </span>
+            <!-- <center> -->
+                <br><br><br><br><br>
+            <div>
+                <h1 class="heading">Position: sticky</h1>
+                <h1>About</h1>
+                <p> An element with position: sticky; is positioned based on the user's scroll position.
+
+                    A sticky element toggles between relative and fixed, depending on the scroll position. It is
+                    positioned relative until a given offset position is met in the viewport - then it "sticks" in place
+                    (like position:fixed).</p>
+                <br>
+                <p>Sticky elements (position: sticky;) are very similar to fixed elements (position: fixed;) in that they both maintain their position on the screen, even as the user scrolls up or down the page. The difference? A sticky element remains confined to the parent container it is in.</p>
+                <!-- <p>for e.g.,Top left corner</p> -->
+            </div><br><br><br><br><br>
+            <div id="overview">
+                <h1 class="heading">Position: Fixed</h1>
+                <p>Practically it can be seen in the bottom right corner of the page.</p>
+            </div>
+
+            <div>
+                <h1>About</h1>
+
+                <p>
+                    The element is removed from the normal document flow, and no space is created for the element in the
+                    page layout. It is positioned relative to the initial containing block established by the
+                    viewport, except when one of its ancestors has a transform,perspective, or
+                    filter property set to something other than none (see the CSS Transforms Spec), in which case that
+                    ancestor behaves as the containing block. (Note that there are browser
+                    inconsistencies with perspective and filter contributing to containing block formation.) Its final
+                    position is determined by the values of top, right, bottom, and left.
+
+                    This value always creates a new stacking context. In printed documents, the element is placed in the
+                    same position on every page.
+                </p>
+                <p>
+                    -------------These lines are for making the page scrolable.--------------</p>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium necessitatibus porro quos cum
+                    hic
+                    assumenda, inventore iste. Enim modi repellendus hic dignissimos fugiat. Praesentium tenetur
+                    molestias
+                    fuga omnis perspiciatis quidem dicta obcaecati perferendis minus, iste ex dolore doloremque?
+                    Architecto
+                    possimus cumque asperiores veniam! Iusto tempora, odit quis laboriosam excepturi ut at impedit.
+                    Quibusdam id maiores illum iusto nobis nihil ab itaque iste ratione vero possimus animi earum
+                    deleniti
+                    eos recusandae nulla neque officiis amet quaerat dignissimos fugit, quo non. Asperiores modi rem
+                    alias.
+                    Enim eaque consequuntur aliquam debitis. Voluptatibus repudiandae tenetur obcaecati ea officiis
+                    veritatis asperiores nemo culpa aut quae.</p>
+
+
+            </div><br><br><br><br><br>
+            <h1 class="heading">Position: Static</h1>
+            <h1>About</h1>
+            <p>The element is positioned according to the normal flow of the document. The top, right, bottom, left, and
+                z-index properties have no effect. This is the default value.</p>
+            <span>
+                <p>for example
+                <div class="static"><br>
+                    The element with static POSITIONING!
+                    Lorem ipsum dolor, sit amet consectetur  aperiam facere facilis. Ab sequi veniam consequuntur corporis temporibus!
+                </div>
+                </p>
+            </span>
+            <br><br><br><br><br>
+            <h1 class="heading">Position: Relative</h1>
+            <h1>About</h1>
+            <p>The element is positioned according to the normal flow of the document, and then offset relative to
+                itself
+                based on the values of top, right, bottom, and left. The offset does not affect the position of any
+                other
+                elements; thus, the space given for the element in the page layout is the same as if position were
+                static.
+
+                This value creates a new stacking context when the value of z-index is not auto. Its effect on
+                table-*-group, table-row, table-column, table-cell, and table-caption elements is undefined.
+
+            </p>
+            
+            <div class="relative">
+                <span id="relativeeg">for example scroll down.</p>
+               <p id='relative'><br>
+                this the container element with Relative position<br>Lorem ipsum dolor<br> sit amet.<br></p></span>
+            </div><br><br>
+            <div class="fixed1">
+                <a href="https://www.instagram.com/rishitripathi_" target="_blank">
+                    <img src="/CSS-position-TAGS.github.io-master/img/instaicon.png"
+                    width=40rem title="rishitripathi_"></a>
+            </div>
+            <div class="fixed3">
+                <a href="mailto:rishabhtrip1891@gmail.com" target="_main">
+                    <img src="/CSS-position-TAGS.github.io-master/img/gmailicon.png" width="32.9rem"
+                    alt="mail us" title="gmail">
+                </a>
+            </div>
+            <div class="fixed2">
+                <a href="https://en.wikipedia.org/wiki/CSS#:~:text=There%20are%20five%20possible%20values,bottom%20%2C%20left%20or%20right%20properties." target="_main">
+                    <img src="https://findicons.com/files/icons/111/popular_sites/128/wikipedia_globe_icon.png" width="32.9rem"
+                    alt="know more" title="wikipedia">
+                </a>
+            </div>
+            <div class="fixed4">
+                <a href="https://twitter.com/Rishitripathi24" target="_main">
+                    <img src="https://pngimg.com/uploads/twitter/small/twitter_PNG9.png" width="32.9rem"
+                    alt="follow me" title="MY twitter">
+                </a>
+            </div>
+
+    
+            <br><br><br>
+            <h1 class="heading">Position: Absolute</h1>
+            <h1>About</h1>
+            <p>The element is removed from the normal document flow, and no space is created for the element in the page
+                layout. It is positioned relative to its closest positioned ancestor, if any; otherwise, it is placed
+                relative to the initial containing block. Its final position is determined by the values of top, right,
+                bottom, and left.
+
+                This value creates a new stacking context when the value of z-index is not auto. The margins of
+                absolutely positioned boxes do not collapse with other margins.</p>
+            <p>for example</p>
+            <div class="rel"> This container elment of the relative position.
+                <div class="absolute">
+                    This os the container element with absolute position.
+
+                </div>
+            </div>
+
+            <!-- form box -->
+            
+            <span>
+                <form action="file3.html" method="POST" name="myform" >            
+                        <table class="tableborder" cellspacing="0.1rem" cellpadding="20rem"
+                            style="background-image: url(img/gradient_2.jpg)";background-size : 100% 100% ; width="500"  >
+        
+                            
+                            <tr>
+                                <td align="center">
+                                    <span>
+                                        <img src="favicon/favicon_io2/android-chrome-192x192.png" alt="I.m.s"></span>
+                                        <span>
+                                            <h1 style="color: rgb(248, 248, 248);">
+                                    Imaginary mate school
+                                            </h1></span>
+                                </td>
+                            </tr>
+                            <tr>
+                            
+                                <td style="color: rgb(255, 255, 255);"><label for="fname">Enter your first name : </label></td>
+                                <td> <input class="block"type="text" name="fname" placeholder="&nbsp;&nbsp;first name"></td>
+                            </tr><br>
+                            <tr style="color: aliceblue;">
+                                <td> <label for="lname">Enter your last name : </label></td>
+                                <td><input class="block" type="text" name="lname" id="lname" placeholder="&nbsp;&nbsp;last name"></td>
+        
+                            </tr><br><br>
+        
+                            <tr style="color: aliceblue;">
+                                <td><label for="e-mail">Email : </td>
+                                <td>
+                                    <input class="block"type="email" name="email" id="e-mail" placeholder="&nbsp;&nbsp;enter your email here...">
+                                </td>
+                                </label></td>
+                            </tr><br><br>
+        
+                            <tr style="color: aliceblue;">
+        
+                                <td><label for="pwd">password&nbsp;(8 characters minimum) :</td>
+        
+                                <td>
+                                    <input class="block"type="password" name="pwd" id="pwd" minlength="8" required
+                                        placeholder="&nbsp;&nbsp;********"></label>
+                                </td>
+                            </tr>
+        
+                            <tr style="color: aliceblue;">
+                                <td><label for="txt">Explain why you want to join?</td>
+                                <td><textarea class="block"name="textarea" cols="30" rows="10" placeholder="&nbsp;enter the text here......"
+                                        id="txt"></textarea>
+                                    </label></td>
+                            </tr><br><br>
+        
+                            <tr style="color: aliceblue;">
+                                <td>Select your subjets:</td>
+                                <td><label for="M">
+                                        <input type="checkbox" name="maths" id="M">maths
+                                    </label>
+                                    <label for="E">
+                                        <input type="checkbox" name="English" id="E">English
+                                    </label>
+                                    <label for="Bio">
+                                        <input type="checkbox" name="Biology" id="Bio">Biology
+                                    </label>
+                                    <label for="com">
+                                        <input type="checkbox" name="commerce" id="com">commerce
+                                    </label>
+                                    <label for="bus">
+                                        <input type="checkbox" name="BussinesStudies" id="bus">BussinesStudies
+                                    </label>
+                                    <label for="chem">
+                                        <input type="checkbox" name="Chemistry" id="chem">Chemistry
+                                    </label>
+                                    <label for="phy">
+                                        <input type="checkbox" name="Physics" id="phy">Physics
+                                    </label>
+                                    <label for="cs">
+                                        <input type="checkbox" name="Computer Science" id="cs">Computer Science
+                                    </label>
+                                </td>
+                            </tr><br><br>
+                            <tr style="color: aliceblue;">
+                                <td>
+                                    
+                                        <label for="g">Gender:</td>
+                                            <td><label for="gender1">
+                                           <input type="radio" name="radio" value="male" id="gender1">male</label>
+                                            
+                                        <label for="gender2">
+                                            <input type="radio" name="radio" value="female" id="gender2">female
+                                        </label>
+                                        <input type="radio" name="radio" value="male" id="gender1">others</label>
+                                </td>
+                            </tr>
+                            <tr style="color: aliceblue;">
+                                <td>
+                                    Select your branch:</td><td>
+                                    <select class="block"name="select">
+                                        <option class="block"value="Cse">&nbsp;CSE</option>
+                                        <option class="block"value="it">&nbsp;IT</option>
+                                        <option class="block"value="ai">&nbsp;AI</option>
+                                        <option class="block"value="ai+ml">&nbsp;AI + ML</option>
+                                    </select><br><br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input class="block"type="submit" name="submit" value="submit">
+                                </td>
+        
+        
+                                <td>
+                                    <input class ="block"type="reset" name="rstbtn" value="reset">
+                                </td>
+                                <td>
+                                    <input class="block" type="button" name="btn" value="next">
+                                </td>
+                            </tr>
+                </form>
+        
+                </table></span>
+
+        </section>
+    </center>
+</body>
+
+</html>
